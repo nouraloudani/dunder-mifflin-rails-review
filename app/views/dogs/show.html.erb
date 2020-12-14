@@ -1,0 +1,15 @@
+<h1>Dog Show Page</h1>
+
+<h3><%= @dog.name %></h3>
+<p><%= @dog.breed %></p>
+<p><%= @dog.age %></p>
+
+
+
+<% Employee.all.map do |emp| %>
+    <% if emp.dog_id == @dog %> 
+    <p><%= emp.first_name %></p>
+    <% end %>
+
+<% end %>
+    
